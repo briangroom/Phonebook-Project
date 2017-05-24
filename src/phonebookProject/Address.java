@@ -58,31 +58,5 @@ public class Address {
 	}
 
 	
-/*	public int compareTo(String phoneIn) {
-
-		if (phoneIn == this.phone) {
-			return 0;
-		} else {
-			return 1;
-		}
-	}
-*/
-	public int cityCompareTo(String city) {
-
-		if (city == this.city) {
-			return 0;
-		} else {
-			return 1;
-		}
-	}
-
-	public int stateCompareTo(String state) {
-
-		if (state == this.state) {
-			return 0;
-		} else {
-			return 1;
-		}
-	}
 
 }

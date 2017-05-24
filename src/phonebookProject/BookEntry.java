@@ -83,62 +83,6 @@ public class BookEntry {
 				", "+Address.getCity()+", "+Address.getState()+", "+
 				Address.getZipCode()+"  Phone: " + this.phone);
 	}
-
-	public int compareTo(String phoneIn) {
-
-		if (phoneIn == this.getPhone()) {
-			return 0;
-		} else {
-			return 1;
-		}
-	}
-
-	public int fNameCompareTo(String fName) {
-
-		PhoneBook pb1 = new PhoneBook();
-		pb1.entries = pb1.getEntries();
-
-		int foundRec = 0;
-
-		if (pb1.entries.size()>0) {
-			for (int i=0; i<pb1.entries.size(); i++) {
-				if (getFirstName().equals(fName)) {
-					foundRec = 1;
-					System.out.println(pb1.entries);
-					}
-			}
-		}else {
-			System.out.println("No entries found.");
-		}
-
-		return foundRec;
-	}
-
-	public int lNameCompareTo(String lName) {
-
-		if (lName == this.getLastName()) {
-			return 0;
-		} else {
-			return 1;
-		}
-	}
-
-	public int flNameCompareTo(String flName) {
-
-		if (flName == this.getFullName()) {
-			return 0;
-		} else {
-			return 1;
-		}
-	}
-
-	public int phoneCompareTo(String phone) {
-
-		if (phone == this.getPhone()) {
-			return 0;
-		} else {
-			return 1;
-		}
-	}
-
 }
+
+

@@ -150,14 +150,4 @@ public class Application {
 	}
 
 
-	public static void removeEntry(String phone) {
-		
-		BookEntry be1 = new BookEntry();
-		//Address a1;
-		PhoneBook pb1 = new PhoneBook();
-		List<BookEntry> entries = pb1.getEntries();
-
-		entries.remove(be1.phoneCompareTo(phone));
-
-	}
 }
